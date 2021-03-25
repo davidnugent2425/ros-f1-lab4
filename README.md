@@ -32,6 +32,8 @@ wget https://raw.githubusercontent.com/davidnugent2425/ros-f1-lab4/master/driver
 chmod +x driver.py
 ```
 
+## Testing the Follow The Gap Method
+
 In another terminal, run the simulator using it's default map or pass in a map of your choice
 
 ```
