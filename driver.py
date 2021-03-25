@@ -69,6 +69,8 @@ class reactive_follow_gap:
         Return index of best point in ranges
 	Naive: Choose the furthest point within ranges and go there
         """
+        # do a sliding window average over the data in the max gap, this will
+        # help the car to avoid hitting corners
         averaged_max_gap = np.convolve(ranges[start_i:end_i], np.ones(self.BEST_POINT_CONV_SIZE), 'same') / self.BEST_POINT_CONV_SIZE
         return averaged_max_gap.argmax() + start_i
 
