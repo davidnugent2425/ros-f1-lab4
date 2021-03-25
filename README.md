@@ -4,7 +4,7 @@ Today we will be implementing the reactive Follow The Gap autonomuos driving met
 
 ## New run-simulator Script
 
-We have updated the run-simulator script to now optionally take the name of the map you want to use. We will start by removing the old script and downloading the new script from our Crash Course repo
+We have updated the run-simulator script to now optionally take the name of the map you want to use. We will start by removing the old script and downloading the new script from our Crash Course repo. We will also download a new file which just contains the names of all the f110 maps, for easy access
 
 ```
 rm run-simulator.sh
