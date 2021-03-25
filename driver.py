@@ -39,6 +39,7 @@ class reactive_follow_gap:
             2.Rejecting high values (eg. > 3m)
         """
         self.degrees_per_elem = (2*math.pi) / len(ranges)
+	# we won't use the LiDAR data from directly behind us
         proc_ranges = np.array(ranges[135:-135])
         # sets each value to the mean over a given window
         proc_ranges = np.convolve(proc_ranges, np.ones(self.PREPROCESS_CONV_SIZE), 'same') / self.PREPROCESS_CONV_SIZE
